@@ -121,3 +121,58 @@ audio::-webkit-media-slider-thumb {
     width: 420px;
     margin-left: 20px;
 }
+
+/* Styles for Smartphone and PC */
+.device-specs {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    #smartphone-specs {
+        display: block;
+    }
+
+    #pc-specs {
+        display: none;
+    }
+
+    body {
+        padding-bottom: 50px;
+    }
+
+    header {
+        padding: 0.5em;
+    }
+
+    nav li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    main {
+        margin: 10px;
+    }
+
+    article {
+        padding: 10px;
+    }
+
+    aside {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    #smartphone-specs {
+        display: none;
+    }
+
+    #pc-specs {
+        display: block;
+    }
+}
